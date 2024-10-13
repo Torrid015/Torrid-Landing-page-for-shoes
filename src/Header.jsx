@@ -15,19 +15,17 @@ const Header = () => {
         </h1>
 
         <nav className=' justify-center items-center hidden sm:flex sm:mx-auto'>
-          {Nav.map((links, index) => {
-            return (
-              <div
-                key={index}
-                className='p-3 pb-0  sm:flex text-[#2E4053] text-lg hover:text-orange-950 transition-all ease-in relative  pt-0 space-x-4'>
-                <a
-                  href={links.href}
-                  className='hover:after:content[] hover:after:absolute hover:after:w-7 hover:after:h-[2px] hover:after:bg-orange-950 hover:after:bottom-0 hover:after:left-0 transition-all ease-in'>
-                  {links.name}
-                </a>
-              </div>
-            );
-          })}
+          {Nav.map((links, index) => (
+            <div
+              key={index}
+              className='p-3 pb-0  sm:flex text-[#2E4053] text-lg hover:text-orange-950 transition-all ease-in relative  pt-0 space-x-4'>
+              <a
+                href={links.href}
+                className='hover:after:content[] hover:after:absolute hover:after:w-7 hover:after:h-[2px] hover:after:bg-orange-950 hover:after:bottom-0 hover:after:left-0 transition-all ease-in'>
+                {links.name}
+              </a>
+            </div>
+          ))}
         </nav>
       </div>
       <div className='p-3 font-serif text-base text-gray-400 border rounded-full border-red-300 mx-auto hover:border-red-500 hover:text-gray-800 transition-all ease-in leading-3 tracking-wide hidden sm:flex'>
@@ -46,8 +44,8 @@ const Header = () => {
       </div>
       <section
         className={` flex-col sm:hidden bg-white origin-top animate-open-menu top-0 ${
-          isOpen === true ? `flex` : `hidden`
-        } absolute w-full justify-center text-4xl z-30   transition-all`}
+          isOpen === true ? 'flex' : 'hidden'
+        } absolute w-full justify-center text-4xl z-30 transition-all `}
         onClick={() => {
           setisOpen(false);
         }}>
