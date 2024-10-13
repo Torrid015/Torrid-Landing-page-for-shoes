@@ -3,7 +3,7 @@ const Footer = () => {
   return (
     <section className='mt-4 px-4'>
       <hr />
-      <div className='flex items-center justify-evenly mx-auto text-slate-gray'>
+      <div className='flex items-start justify-evenly mx-auto text-slate-gray flex-wrap gap-4' >
         <div className='flex flex-col font-bold'>
           <h1 className='text-amber-400 font-serif font-extrabold text-2xl flex items-start justify-start mx-auto p-3'>
             .Torrid
