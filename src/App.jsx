@@ -1,5 +1,5 @@
 
-import Header from './header';
+import Header from './Header';
 import PopularProduct from './PopularProduct';
 import Footer from './sections/Footer';
 import Hero from './sections/hero';
